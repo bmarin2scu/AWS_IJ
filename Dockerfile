@@ -37,7 +37,7 @@ EXPOSE 7788
 #run jupyter notebook on specific port, allow-root should not be used in actual running system 
 USER ${JUPYTER_USER}
 
-CMD jupyter notebook --ip=13.57.183.33 --port 7788
+CMD jupyter notebook --ip=0.0.0.0 --port 7788
 
 #https://learnpython.com/blog/python-requirements-file/
 
