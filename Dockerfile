@@ -32,12 +32,12 @@ WORKDIR /home/our_user/lab2
 
 
 #expose port 
-EXPOSE 7788
+EXPOSE 80
 
 #run jupyter notebook on specific port, allow-root should not be used in actual running system 
 USER ${JUPYTER_USER}
 
-CMD jupyter notebook --ip=0.0.0.0 --port 7788
+CMD jupyter notebook --ip=0.0.0.0 --port 80
 
 #https://learnpython.com/blog/python-requirements-file/
 
